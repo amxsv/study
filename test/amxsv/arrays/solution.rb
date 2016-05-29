@@ -11,7 +11,7 @@ module Amxsv
         end
 
         if to == from
-          array.include?(query) ? (return from) : (return -1)
+          return array.include?(query) ? from : -1
         end
 
         mid = to + (from - to) / 2
